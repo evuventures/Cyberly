@@ -83,6 +83,38 @@ const experts = [
     bio: "Helping immigrants navigate legal complexities with care. 10+ years of immigration law experience.",
     skills: ["Visa Guidance", "Green Card", "Legal Advice", "Immigration"],
   },
+  {
+    name: "Noah Brooks",
+    role: "Fitness Coach",
+    location: "Los Angeles",
+    image: "https://randomuser.me/api/portraits/men/60.jpg",
+    bio: "Certified trainer focused on strength training, mobility, and customized home workouts.",
+    skills: ["Strength", "Mobility", "Custom Workouts", "Nutrition"],
+  },
+  {
+    name: "Isabella Moore",
+    role: "Marketing Strategist",
+    location: "London",
+    image: "https://randomuser.me/api/portraits/women/75.jpg",
+    bio: "Helping brands scale through digital campaigns, content planning, and social media.",
+    skills: ["SEO", "Content", "Digital Ads", "Brand Growth"],
+  },
+  {
+    name: "James Patel",
+    role: "Financial Advisor",
+    location: "Dubai",
+    image: "https://randomuser.me/api/portraits/men/75.jpg",
+    bio: "Assisting professionals in smart investment strategies and long-term wealth planning.",
+    skills: ["Investment", "Wealth", "Retirement", "Financial Literacy"],
+  },
+  {
+    name: "Emma Zhou",
+    role: "Language Tutor",
+    location: "Vancouver",
+    image: "https://randomuser.me/api/portraits/women/62.jpg",
+    bio: "Language tutor fluent in English, Mandarin, and Spanish. Personalized speaking and grammar lessons.",
+    skills: ["ESL", "Mandarin", "Grammar", "Speaking"],
+  },
 ];
 
 const ExpertDirectoryPage = () => {
@@ -120,7 +152,7 @@ const ExpertDirectoryPage = () => {
       </div>
 
       {/* 🧑‍💼 Expert Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 py-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6 px-6 py-10">
         {experts.map((expert, idx) => (
           <ExpertCard key={idx} {...expert} />
         ))}
