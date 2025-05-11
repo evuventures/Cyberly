@@ -5,9 +5,9 @@ import LiveSession from "./components/LiveSession";
 
 function App() {
   // Uncomment one of the following lines depending on what you want to show
-  // return <ExpertDirectoryPage />;
+  return <ExpertDirectoryPage />;
   // return <ExpertProfile />;
-  return <LiveSession />;
+  // return <LiveSession />;
 }
 
 export default App;

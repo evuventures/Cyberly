@@ -38,6 +38,11 @@ const ExpertProfile = ({
     Thursday: "9:00 AM - 5:00 PM (EST)",
     Friday: "9:00 AM - 3:00 PM (EST)",
   },
+  topicRates = {
+    "General Consultation": "$50/min",
+    "Immigration Advice": "$60/min",
+    "Document Review": "$45/min",
+  },
 }) => {
   const [selectedDate, setSelectedDate] = useState("");
   const [selectedTime, setSelectedTime] = useState("");
@@ -190,6 +195,19 @@ const ExpertProfile = ({
         >
           Confirm Booking
         </button>
+
+        {/* New: Rate per Discussion Type */}
+        <div className="mt-6">
+          <h4 className="text-md font-semibold mb-2">Charges per Topic</h4>
+          <ul className="text-sm text-gray-700 space-y-1">
+            {Object.entries(topicRates).map(([topic, rate], index) => (
+              <li key={index} className="flex justify-between">
+                <span>{topic}</span>
+                <span className="text-blue-600 font-medium">{rate}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

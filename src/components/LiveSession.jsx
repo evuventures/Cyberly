@@ -97,7 +97,7 @@ const LiveSession = () => {
 
         <div className="relative bg-gray-100 rounded-2xl overflow-hidden aspect-video shadow-lg border border-gray-300 mb-6">
           <img
-            src="https://images.unsplash.com/photo-1589571894960-20bbe2828a29"
+            src="https://th.bing.com/th/id/OIP.usYnwXgh7l4OZf2TED0vFAHaE8?cb=iwp1&rs=1&pid=ImgDetMain"
             alt="Lawyer"
             className={`object-cover w-full h-full ${
               videoOn ? "opacity-100" : "opacity-20"
@@ -143,7 +143,7 @@ const LiveSession = () => {
 
           <div className="absolute bottom-5 right-5 w-24 h-24 border-4 border-white rounded-xl overflow-hidden shadow-lg">
             <img
-              src="https://images.unsplash.com/photo-1614281412420-23f507f0fc03"
+              src="https://th.bing.com/th/id/OIP.UkTBowRhbbhym0TupnXktgHaE7?cb=iwp1&rs=1&pid=ImgDetMain"
               alt="Client"
               className="object-cover w-full h-full"
             />
