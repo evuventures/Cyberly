@@ -5,7 +5,7 @@ const Signup = () => {
   return (
     <div className="min-h-screen flex bg-gray-100">
       {/* Left Side - Image Section */}
-      <div className="w-[800px] h-[800px] bg-gray-100 flex items-center justify-center p-10">
+      <div className="w-[800px] h-[700px] bg-gray-100 flex items-center justify-center p-10">
         <img src={image} alt="Cyberly team" className="rounded-xl shadow-lg" />
       </div>
 
